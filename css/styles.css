@@ -286,20 +286,26 @@ ul a::after {
 .btn-presen button {
     width: 250px;
     padding: 10px 0px;
-    background-color: black;
+    background-color: #FFB400;
     color: white;
     font-size: 25px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     margin: 40px 0px;
+    border: 1px solid #FFB400;
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    -o-transition: background-color 2s;
 }
 
 .btn-presen button:hover {
     background-color: white;
-    color: black;
+    color: #FFB400;
 }
 
 strong {
@@ -375,22 +381,24 @@ strong {
     outline: none;
 }
 
-input[type=button] {
-    background: linear-gradient(to right, black, #FFB400);
+input[type=submit] {
+    background-color: #FFB400;
     color: white;
     padding: 10px 0px;
     border: none;
     font-size: 20px;
     width: 200px;
-    transition: 2s ease-in-out !important;
-    -webkit-transition: 2s ease-in-out !important;
-    -moz-transition: 2s ease-in-out !important;
-    -ms-transition: 2s ease-in-out !important;
-    -o-transition: 2s ease-in-out !important;
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    -o-transition: background-color 2s;
 }
 
-input[type=button]:hover {
-    background: linear-gradient(to right, white, #FFB400);
+input[type=submit]:hover {
+    background-color: white;
+    border: 1px solid #FFB400;
+    color: #FFB400;
 }
 
 .btn-form {
@@ -674,11 +682,11 @@ h1.educ-title {
     border: none;
     padding: 10px 20px;
     font-size: 20px;
-    transition: transform 2s;
-    -webkit-transition: transform 2s;
-    -moz-transition: transform 2s;
-    -ms-transition: transform 2s;
-    -o-transition: transform 2s;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
 }
 
 .menu-project button:hover {
