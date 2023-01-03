@@ -42,9 +42,9 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!-- <div id="preloader">
+  <div id="preloader">
     <div class="line"></div>
-  </div> -->
+  </div>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -58,24 +58,6 @@
 
   <script src="https://kit.fontawesome.com/552b1297ac.js" crossorigin="anonymous"></script>
   <script src="%PUBLIC_URL%/js/loader.js"></script>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) { myIndex = 1 }
-        x[myIndex - 1].style.display = "block";
-        setInterval(carousel, 2000); // Change image every 2 seconds
-      }
-    })
-  </script>
 </body>
 
 </html>

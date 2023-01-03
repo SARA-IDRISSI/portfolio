@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="text-center">
                 <div className="lign mx-auto"></div>
             </div>
-            <div className="Form container">
+            <form className="Form container">
                 <div className="col-12 row gx-1">
                     <div className="col-12 col-md-6 ">
                         <input type="text" className="col-12" placeholder="Your Name" required />
@@ -18,10 +18,10 @@ const Contact = () => {
                     <textarea name="" className="col-12" id="" rows="10" placeholder="Message" required></textarea>
                 </div>
                 <div className="btn-form">
-                    <input type="button" value="Envoyer" />
+                    <input type="submit" value="Envoyer" />
                 </div>
 
-            </div>
+            </form>
         </div>
     )
 }

@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <div className='body'>
+    <div className='body overflow-x-hidden'>
       <Particles
         id="tsparticles"
         init={particlesInit}

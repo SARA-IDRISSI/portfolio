@@ -6,13 +6,13 @@ const ProjectItem = (props) => {
     const secondTooltipRef = useRef();
     useEffect(() => {
         new Tooltip(firstTooltipRef.current, {
-            title: "T!",
+            title: "Show Project!",
             placement: 'top',
             trigger: 'hover',
             offset: "0,6",
         })
         new Tooltip(secondTooltipRef.current, {
-            title: "This is the tooltip content!",
+            title: "Show a Code!",
             placement: 'top',
             trigger: 'hover',
             offset: "0,6",
@@ -33,10 +33,10 @@ const ProjectItem = (props) => {
                     <div className="flip-card-back position-relative">
                         <img src={props.imgUrl} alt="" srcset="" />
                         <div className="bg-img-back position-absolute">
-                            <a href={props.projectLink} ref={firstTooltipRef}>
+                            <a href={props.projectLink} ref={firstTooltipRef} target={"_blank"} rel="noopener noreferrer">
                                 <i class="fa-regular fa-eye "></i>
                             </a>
-                            <a href={props.githubLink} ref={secondTooltipRef}><i class="fa-regular fa-file-code"></i></a>
+                            <a href={props.githubLink} target={"_blank"} ref={secondTooltipRef} rel="noopener noreferrer"><i class="fa-regular fa-file-code"></i></a>
                         </div>
                     </div>
                 </div>

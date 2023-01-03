@@ -16,14 +16,14 @@ const Header = () => {
 
                 <div className="social">
                     <div className="icon git">
-                        <a href="www.google.com"><i className="bi bi-github"></i></a>
+                        <a href="https://github.com/SARA-IDRISSI" target={"_blank"} rel="noopener noreferrer"><i className="bi bi-github"></i></a>
 
                     </div>
                     <div className="icon in">
                         <a href="www.google.com"><i className="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <div className="icon mail">
-                        <a href="mailto:"><i className="bi bi-envelope"></i></a>
+                        <a href="mailto:idrissisara2209@gmail.com"><i className="bi bi-envelope"></i></a>
 
                     </div>
 

@@ -1,43 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { collection, onSnapshot } from "firebase/firestore";
 
-const data = {
-    experiences: [
-        {
-            title: "Stagiaire Développement Web",
-            company: "Ministère de la Justice service Informatique / ASP.NET , C#",
-            date: "2018-2019",
-            description: "Création d'une application Web de suivi des courriers du ministère (numéro de courrier, sujet de courrier, émetteurs de courrier, destinataire de courrier)"
+import { firestore } from "../../config/firebase";
 
-        },
-        {
-            title: "Stagiaire Développement Web",
-            company: "Ministère de la justice Service Tahdit  Développement web  / ASP MVC , C#",
-            date: "2017-2018",
-            description: "Création d’une application web pour renseignement des informations et des tâches des employeurs du ministère."
-        }
-    ],
-    educations: [
-        {
-            title: "",
-            school: "Full-Stack Web Developer 3W Academy – Rabat / Équivalent Bac +2 en europe",
-            date: "2022",
-            description: ""
-        },
-        {
-            title: "  ",
-            school: "Institut spécialisé de technologie appliquée chmaou",
-            date: "2017-2018",
-            description: "2ème année Technicien Spécialise en Développement Informatique"
-        },
-        {
-            title: "",
-            school: "Lycée Bou Abid",
-            date: "2014-2015",
-            description: "Baccalauréat en Sciences Expérimentales"
-        }
-    ]
-}
 const Education = () => {
+    const [myEducations, setMyEducations] = useState([]);
+    const [myExperience, setMyExperience] = useState([]);
+
+
+    useEffect(() => {
+        onSnapshot(collection(firestore, "educations"), (querySnapshot => {
+            const firebaseEducations = [];
+            querySnapshot.forEach(educ => {
+                firebaseEducations.push(educ.data());
+            })
+            setMyEducations(firebaseEducations)
+        })
+        )
+
+        onSnapshot(collection(firestore, "experiences"), (querySnapshot => {
+            const firebaseExperience = [];
+            querySnapshot.forEach(exper => {
+                firebaseExperience.push(exper.data());
+            })
+            setMyExperience(firebaseExperience)
+        })
+        )
+    }, []);
     return (
         <div className="container" id="éducation">
             <div className="row gx-5 edu">
@@ -49,7 +38,7 @@ const Education = () => {
 
                     <h1><i class="bi bi-mortarboard-fill"></i> EXPERIENCE PROFESSIONNELLE</h1>
                     <div data-aos="fade-right" className="col-12">
-                        {data.experiences.map(experience => <div className="col-12 borderr-start ps-5 pb-4 position-relative">
+                        {myExperience.map(experience => <div className="col-12 borderr-start ps-5 pb-4 position-relative">
                             <div className="experience col-12  p-4">
                                 <div className="circle"></div>
                                 <div className="line-border"></div>
@@ -66,7 +55,7 @@ const Education = () => {
                 <div className="col-12 col-lg-6 expriences">
                     <h1><i class="bi bi-mortarboard-fill"></i> FORMATION </h1>
                     <div data-aos="fade-left" className="col-12">
-                        {data.educations.map(education => <div className="col-12 borderr-start ps-5 pb-4 position-relative">
+                        {myEducations.map(education => <div className="col-12 borderr-start ps-5 pb-4 position-relative">
                             <div div className="experience col-12  p-4" >
                                 <div className="circle"></div>
                                 <div className="line-border"></div>
