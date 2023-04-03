@@ -1,0 +1,121 @@
+/******************************* Header media  ******************************************/
+@media screen and (max-width:399px) {
+    .text-boox h1 {
+        font-size: 35px;
+    }
+
+    .logo {
+        font-size: 20px !important;
+        letter-spacing: none !important;
+
+    }
+
+    .headerr {
+        background-size: 100vw 100vh;
+
+    }
+
+    .text-boox {
+        width: 400px;
+        margin-left: 120px;
+    }
+
+    .text-boox h2 {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    .text-boox h3 {
+        font-size: 20px;
+    }
+
+    .menu-project {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu-project button {
+        width: 200px;
+        margin-top: 10px
+    }
+}
+
+
+@media screen and (min-width:400px) and (max-width: 575px) {
+    .text-boox h1 {
+        font-size: 35px;
+    }
+
+    .text-boox {
+        width: 400px;
+        margin-left: 120px;
+    }
+
+    .text-boox h2 {
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    .text-boox h3 {
+        font-size: 20px;
+    }
+
+    .menu-project {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .menu-project button {
+        width: 200px;
+        margin-top: 10px
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .text-boox h1 {
+        font-size: 50px;
+    }
+
+    .text-boox {
+        width: 400px;
+        margin-left: 60px;
+    }
+
+    .text-boox h2 {
+        letter-spacing: 2px;
+    }
+
+    .menu-project button {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .text-boox h1 {
+        font-size: 50px;
+    }
+
+    .text-boox {
+        width: 400px;
+    }
+
+    .text-boox h2 {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1300px) {
+    .text-boox h1 {
+        font-size: 100px;
+    }
+
+    .text-boox {
+        width: 700px;
+        margin-left: 90px;
+    }
+
+    .text-boox h2 {
+        letter-spacing: 10px;
+    }
+}
