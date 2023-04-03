@@ -3,6 +3,10 @@
     font-family: "Roboto";
 }
 
+.body::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
 .logo {
     font-size: 35px !important;
     letter-spacing: 15px !important;
@@ -15,7 +19,7 @@
 }
 
 .navnav li a:hover {
-    color: #FFB400 !important;
+    color:#d39dea !important;
 }
 
 @keyframes animate {
@@ -80,11 +84,16 @@ ul a::after {
 /**************************************HEADER********************************/
 
 .headerr {
-    background-image: url("../img/home2.jpg");
+    background:url("../img/pexels-sharon-snider-7091641.jpg");
     background-repeat: no-repeat;
+ 
     background-size: cover;
+
     height: 100vh;
     position: relative;
+    
+
+  
 }
 
 .headerr::after {
@@ -92,9 +101,13 @@ ul a::after {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.15);
     left: 0;
     bottom: 0;
+}
+.mypic{
+    position: relative;
+    z-index: 10;
 }
 
 .text-boox {
@@ -247,11 +260,11 @@ ul a::after {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*36deg))translateZ(400px);
-    -webkit-transform: rotateY(calc(var(--i)*36deg))translateZ(400px);
-    -moz-transform: rotateY(calc(var(--i)*36deg))translateZ(400px);
-    -ms-transform: rotateY(calc(var(--i)*36deg))translateZ(400px);
-    -o-transform: rotateY(calc(var(--i)*36deg))translateZ(400px);
+    transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+    -webkit-transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+    -moz-transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+    -ms-transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+    -o-transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
     -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 }
 
@@ -266,7 +279,7 @@ ul a::after {
 
 /*********************************** presentation ***************************************************/
 .presen {
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -286,7 +299,7 @@ ul a::after {
 .btn-presen button {
     width: 250px;
     padding: 10px 0px;
-    background-color: #FFB400;
+    background-color:#d39dea;
     color: white;
     font-size: 25px;
     border-radius: 10px;
@@ -295,7 +308,7 @@ ul a::after {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin: 40px 0px;
-    border: 1px solid #FFB400;
+    border: 1px solid#d39dea;
     transition: background-color 2s;
     -webkit-transition: background-color 2s;
     -moz-transition: background-color 2s;
@@ -305,18 +318,18 @@ ul a::after {
 
 .btn-presen button:hover {
     background-color: white;
-    color: #FFB400;
+    color:#d39dea;
 }
 
 strong {
-    color: #FFB400;
+    color:#d693f2;
     font-style: italic;
 
 }
 
 /******************************** Footer ********************************************/
 .a {
-    color: #FFB400;
+    color:#d39dea;
     font-weight: bold;
     text-decoration: none;
 
@@ -382,7 +395,7 @@ strong {
 }
 
 input[type=submit] {
-    background-color: #FFB400;
+    background-color:#d39dea;
     color: white;
     padding: 10px 0px;
     border: none;
@@ -397,8 +410,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: white;
-    border: 1px solid #FFB400;
-    color: #FFB400;
+    border: 1px solid#d39dea;
+    color:#d39dea;
 }
 
 .btn-form {
@@ -568,7 +581,7 @@ input[type=submit]:hover {
 }
 
 .bi-mortarboard-fill {
-    color: #FFB400;
+    color:#d39dea;
     font-size: 50px;
 
 }
@@ -653,7 +666,7 @@ h1.educ-title {
 }
 
 .lign {
-    background-color: #FFB400;
+    background-color:#d39dea;
     width: 10%;
     height: 1px;
     margin-top: -30px;
@@ -676,7 +689,7 @@ h1.educ-title {
 
 .menu-project button {
     margin-right: 30px;
-    background-color: #FFB400;
+    background-color:#d39dea;
     color: white;
     font-weight: bold;
     border: none;
@@ -757,7 +770,7 @@ h1.educ-title {
 .fa-regular {
     padding-top: 130px;
     font-size: 30px;
-    color: #FFB400;
+    color:#d39dea;
 
 }
 
